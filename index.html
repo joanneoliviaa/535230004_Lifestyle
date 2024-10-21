@@ -25,13 +25,13 @@
                         <a class="nav-link" href="#about-us">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacts">Contacts</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#latest">Latest</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#explore">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Contacts</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link search-icon" href="#">
@@ -46,37 +46,157 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="hero-content">
-                        <h1>Welcome to the <span>Lifestyle Hub.</span></h1>
-                        <p>Explore trends, wellness, and living your best life</p>
-                        <a href="#about-us" class="btn btn-primary">Get Started</a>
+   <!-- Hero Section as Bootstrap Carousel -->
+<section id="home" class="hero-section">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Carousel Item 1 -->
+            <div class="carousel-item active">
+                <div class="carousel-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="hero-content">
+                                    <h1>Welcome to the <span>Lifestyle Hub.</span></h1>
+                                    <p>Explore trends, wellness, and living your best life</p>
+                                    <a href="#about-us" class="btn btn-primary">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- About Us Section -->
-    <section id="about-us" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2 class="about-title">About <span>Us</span></h2>
-                    <p class="about-text">Lifestyle is all about finding balance, embracing health, <br>and living in the moment.</br></p>
-                </div>
-                <div class="col-md-6 d-flex justify-content-center">
-                    <div class="about-images">
-                        <img src="/images/image2.png" alt="About Us Image" class="img-fluid rounded shadow-sm">
+            <!-- Carousel Item 2 -->
+            <div class="carousel-item">
+                <div class="carousel-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="hero-content">
+                                    <h1>Stay Fit with <span>Lifestyle Vibes.</span></h1>
+                                    <p>Your gateway to wellness and healthy living</p>
+                                    <a href="#latest" class="btn btn-primary">Explore Now</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+
+
+    <!-- About Us Section (No Carousel) -->
+<section id="about-us" class="about-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="about-title">About <span>Us</span></h2>
+                <p class="about-text">Lifestyle is all about finding balance, embracing health, <br>and living in the moment. Whether you're into fitness, mindfulness, or just looking to elevate your daily routines, you've come to the right place.</p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+                <img src="images/image2.png" class="img-fluid rounded shadow-sm" alt="About Us Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Latest Section -->
+<section id="latest" class="latest-section">
+    <div class="container">
+        <div class="row">
+            <!-- Trending News Section -->
+            <div class="col-md-8">
+                <h2 class="section-title">Latest News</h2>
+                <div class="row">
+                    <!-- Main Article -->
+                    <div class="col-md-6">
+                        <div class="trending-main-article">
+                            <img src="images/image5.png" alt="Main Article Image" class="img-fluid rounded" style="height: 590px;">
+                            <div class="article-content">
+                                <span class="category-label">Wellness</span>
+                                <h3>Top 13 meditation tips</h3>
+                                <p><i class="bi bi-calendar"></i> April 12, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Smaller Articles -->
+                    <div class="col-md-6">
+                        <div class="trending-list">
+                            <div class="trending-item d-flex mb-4">
+                                <img src="images/image6.png" alt="Article Image" class="img-fluid rounded me-3" style="width: 100px;">
+                                <div class="article-info">
+                                    <span class="category-label">Fitness</span>
+                                    <h4>How to Start Running for Beginners</h4>
+                                    <p><i class="bi bi-calendar"></i> April 12, 2023</p>
+                                </div>
+                            </div>
+
+                            <div class="trending-item d-flex mb-4">
+                                <img src="images/image7.png" alt="Article Image" class="img-fluid rounded me-3" style="width: 100px;">
+                                <div class="article-info">
+                                    <span class="category-label">Fitness</span>
+                                    <h4>9 Exercises Celebrity Trainers Swear By To Get In Shape For The Holidays!</h4>
+                                    <p><i class="bi bi-calendar"></i> April 12, 2023</p>
+                                </div>
+                            </div>
+
+                            <div class="trending-item d-flex mb-4">
+                                <img src="images/image8.png" alt="Article Image" class="img-fluid rounded me-3" style="width: 100px;">
+                                <div class="article-info">
+                                    <span class="category-label">Wellness</span>
+                                    <h4>How To Make a Avocado Salad</h4>
+                                    <p><i class="bi bi-calendar"></i> April 12, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories Section -->
+            <div class="col-md-4">
+                <h2 class="section-title">Categories</h2>
+                <div class="category-list">
+                    <div class="category-item">
+                        <div class="category-image">
+                            <img src="images/image10.png" alt="Wellness" class="img-fluid rounded">
+                            <div class="overlay">
+                                <span class="category-label">Wellness</span>
+                                <span class="number">#1</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="category-item">
+                        <div class="category-image">
+                            <img src="images/image3.png" alt="Fitness" class="img-fluid rounded">
+                            <div class="overlay">
+                                <span class="category-label">Fitness</span>
+                                <span class="number">#2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+</section>
+
 
     <footer id="join-community">
         <div class="container">

@@ -29,66 +29,219 @@ html {
     background-color: #FF4C4C;
 }
 
+/* Hero Section */
 .hero-section {
     position: relative;
-    padding: 6rem 0;
-    background-image: url('/images/image1.png'); 
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 100vh;
     background-size: cover;
     background-position: center;
 }
-.hero-content {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 2rem;
-    border-radius: 10px;
-    max-width: 450px;
-}
-.hero-content h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
-}
-.hero-content h1 span {
-    color: #FF6B6B;
-}
-.hero-content p {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 1.5rem;
-}
-.hero-content .btn-primary {
-    background-color: #FF6B6B;
-    border: none;
-}
-.hero-content .btn-primary:hover {
-    background-color: #FF4C4C;
+
+.carousel-item:nth-child(1) {
+    background-image: url('images/image1.png');
 }
 
-.about-section {
-    padding: 4rem 0;
-    display: flex;
-    align-items: center;
+.carousel-item:nth-child(2) {
+    background-image: url('images/image4.png');
 }
-.about-text {
-    font-size: 1.2rem;
-    color: #666;
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 450px;
 }
-.about-title {
-    font-size: 2rem;
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
     color: #333;
+}
+
+.hero-content span {
+    color: #e63946; 
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 15px 0;
+}
+
+
+/* About Us Section */
+.about-section {
+    padding: 60px 0;
+}
+
+.about-title {
+    font-size: 2.5rem;
     font-weight: bold;
 }
+
 .about-title span {
-    color: #FF6B6B;
+    color: #e63946; 
 }
-.about-images {
+
+.about-text {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 20px;
+}
+
+.about-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Latest Section */
+.latest-section {
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #e63946;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+/* Trending Main Article */
+.trending-main-article img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.article-content {
+    padding: 15px 0;
+}
+
+.category-label {
+    background-color: #e63946;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.article-content h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.article-content p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.trending-item img {
+    width: 300px; 
+    height: 100px; 
+    object-fit: cover; 
+    margin-right: 15px; 
+    border-radius: 8px; 
+}
+
+.trending-item .article-info h4 {
+    margin-top: 0.5rem; 
+    margin-bottom: 0.5rem; 
+}
+
+.category-label {
+    font-size: 0.85rem; 
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 0.5rem; 
+}
+
+
+/* Trending List Items */
+.article-info {
+    flex: 1;
+}
+
+.article-info h4 {
+    font-size: 1rem;
+    color: #333;
+}
+
+.article-info p {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/* Categories Section */
+.category-list {
     display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
-.about-images img {
-    width: auto;
-    height: 900px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+
+.category-item {
+    position: relative;
+}
+
+.category-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.category-image img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    color: white;
+    font-size: 1rem; 
+    flex-direction: column; 
+}
+
+.category-label {
+    font-size: 1rem; 
+    margin-bottom: 0.25rem; 
+}
+
+.number {
+    font-size: 0.85rem; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 0.15rem 0.5rem; 
+    border-radius: 0.25rem;
 }
 
 footer {
