@@ -243,6 +243,164 @@ html {
     padding: 0.15rem 0.5rem; 
     border-radius: 0.25rem;
 }
+.explore-fashion-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.explore-fashion-section .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.explore-fashion-section .section-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.explore-fashion-section .nav-pills .nav-link {
+    color: #333;
+    border: none;
+    margin-right: 15px;
+    padding: 8px 20px;
+}
+
+.explore-fashion-section .nav-pills .nav-link.active {
+    background-color: transparent;
+    color: #FF6B6B;
+    color: white;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-info h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.product-info .product-price {
+    font-size: 1rem;
+    color: #FF6B6B;
+}
+
+.product-info .product-price span {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+.contact-container {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-form {
+    background-color: #e7f0fa;
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+.form-header h3 {
+    font-size: 24px;
+    color: #2d5ba5;
+}
+
+.form-header p {
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: inline-block;
+    margin: 10px;
+    width: 45%;
+}
+
+.form-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 120px;
+}
+
+.submit-btn {
+    background-color: #2d5ba5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #1d4c8d;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-info h4 {
+    font-size: 18px;
+    color: #2d5ba5;
+}
+
+.contact-info p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
 
 footer {
     background-color: #f8f9fa;
