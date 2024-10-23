@@ -427,3 +427,76 @@ textarea {
 .bg-brown {
     background-color: #8e6e39; 
   }
+
+/* Media Queries */
+@media (max-width: 576px) { 
+    body {
+        font-size: 18px; 
+    }
+
+    .navbar {
+        padding: 15px; 
+    }
+
+    .hero-content {
+        padding: 30px; 
+    }
+
+    .about-title {
+        font-size: 2.5rem; 
+    }
+
+    .about-text {
+        font-size: 1.2rem;
+    }
+
+    .latest-section {
+        padding: 60px 30px; 
+    }
+
+    .trending-main-article img {
+        width: 100%; 
+    }
+
+    .category-image img {
+        height: 200px; 
+    }
+
+    .product-card {
+        padding: 15px; 
+    }
+
+    .contact-form {
+        width: 80%; 
+    }
+
+    .form-group {
+        width: 48%; 
+    }
+}
+
+@media (max-width: 768px) { 
+    body {
+        font-size: 20px; 
+    }
+
+    .hero-content {
+        max-width: 70%; 
+    }
+
+    .about-title {
+        font-size: 3rem; 
+    }
+
+    .latest-section {
+        padding: 80px 50px;
+    }
+
+    .product-card img {
+        height: 300px; 
+    }
+
+    .contact-form {
+        width: 70%; 
+    }
+}
