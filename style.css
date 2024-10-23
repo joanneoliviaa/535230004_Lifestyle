@@ -7,26 +7,26 @@ html {
     font-size: 1.5rem;
 }
 .nav-link {
-    color: #333 !important;
+    color: #4B4B4B  !important;
     margin-right: 1rem;
 }
 .nav-link.active {
-    color: #FF6B6B !important; 
+    color: #C3A995  !important; 
 }
 .navbar {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #E7D3B0;
 }
 .navbar .search-icon {
     font-size: 1.2rem;
-    color: #333;
+    color: #4B4B4B;
 }
 .signup-btn {
-    background-color: #FF6B6B;
+    background-color: #D5BC7F;
     color: white;
     border: none;
 }
 .signup-btn:hover {
-    background-color: #FF4C4C;
+    background-color: #C3A995;
 }
 
 /* Hero Section */
@@ -55,7 +55,7 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(244, 236, 231, 0.8); 
     padding: 30px;
     border-radius: 8px;
     max-width: 450px;
@@ -64,11 +64,11 @@ html {
 .hero-content h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #333;
+    color: #4B4B4B;
 }
 
 .hero-content span {
-    color: #e63946; 
+    color: #C3A995; 
 }
 
 .hero-content p {
@@ -89,12 +89,12 @@ html {
 }
 
 .about-title span {
-    color: #e63946; 
+    color: #C3A995; 
 }
 
 .about-text {
     font-size: 1.2rem;
-    color: #555;
+    color: #4B4B4B;
     margin-top: 20px;
 }
 
@@ -113,7 +113,7 @@ html {
 .section-title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
+    color: #4B4B4B;
     margin-bottom: 20px;
     position: relative;
 }
@@ -122,7 +122,7 @@ html {
     content: '';
     width: 50px;
     height: 2px;
-    background-color: #e63946;
+    background-color: #B38B6D;
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -140,7 +140,7 @@ html {
 }
 
 .category-label {
-    background-color: #e63946;
+    background-color: #B38B6D;
     color: #fff;
     padding: 5px 10px;
     border-radius: 20px;
@@ -149,7 +149,7 @@ html {
 
 .article-content h3 {
     font-size: 1.2rem;
-    color: #333;
+    color: #4B4B4B;
     margin-top: 10px;
 }
 
@@ -251,7 +251,7 @@ html {
 .explore-fashion-section .section-title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
+    color: #4B4B4B;
     margin-bottom: 10px;
 }
 
@@ -266,12 +266,6 @@ html {
     border: none;
     margin-right: 15px;
     padding: 8px 20px;
-}
-
-.explore-fashion-section .nav-pills .nav-link.active {
-    background-color: transparent;
-    color: #FF6B6B;
-    color: white;
 }
 
 .product-card {
@@ -301,11 +295,6 @@ html {
     margin-bottom: 5px;
 }
 
-.product-info .product-price {
-    font-size: 1rem;
-    color: #FF6B6B;
-}
-
 .product-info .product-price span {
     text-decoration: line-through;
     color: #999;
@@ -320,7 +309,7 @@ html {
 }
 
 .contact-form {
-    background-color: #e7f0fa;
+    background-color: #F4ECE7;
     margin: 0 auto;
     padding: 20px;
     width: 80%;
@@ -330,11 +319,11 @@ html {
 
 .form-header h3 {
     font-size: 24px;
-    color: #2d5ba5;
+    color: #839788;
 }
 
 .form-header p {
-    color: #888;
+    color: #4B4B4B;
     margin-bottom: 20px;
 }
 
@@ -348,14 +337,16 @@ html {
     display: block;
     text-align: left;
     margin-bottom: 5px;
+    color: #4B4B4B;
 }
 
 input, select, textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #C3A995;
     border-radius: 5px;
+    background-color: #FFF5E4;
 }
 
 textarea {
@@ -363,7 +354,7 @@ textarea {
 }
 
 .submit-btn {
-    background-color: #2d5ba5;
+    background-color: #B38B6D;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -373,7 +364,7 @@ textarea {
 }
 
 .submit-btn:hover {
-    background-color: #1d4c8d;
+    background-color: #C3A995;
 }
 
 .contact-info {
@@ -382,7 +373,7 @@ textarea {
 
 .contact-info h4 {
     font-size: 18px;
-    color: #2d5ba5;
+    color: #839788;
 }
 
 .contact-info p {
@@ -403,11 +394,25 @@ textarea {
 
 
 footer {
-    background-color: #f8f9fa;
+    background-color: 	#E7D3B0;
     padding: 2rem;
     margin-top: 2rem;
 }
 footer h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+}
+.btn-primary {
+    background-color: #B38B6D; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #C3A995; 
+    color: white;
 }
