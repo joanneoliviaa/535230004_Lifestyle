@@ -19,11 +19,27 @@ window.addEventListener('scroll', function() {
     });
 });
 
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Mencegah form dari pengiriman default
-    var modalElement = document.querySelector('.bd-example-modal-sm');
-    var modal = new bootstrap.Modal(modalElement); // Inisialisasi modal
-    modal.show(); // Tampilkan modal
-});
+$(document).ready(function() {
+    $('#contactForm').on('submit', function(e) {
+        e.preventDefault();
 
+        let isValid = true;
+
+        $(this).find('input, textarea').each(function() {
+            if ($(this).val() === '') {
+                isValid = false;
+                $(this).addClass('is-invalid'); 
+            } else {
+                $(this).removeClass('is-invalid'); 
+            }
+        });
+
+        if (isValid) {
+            $('#smallModal').modal('show');
+            $(this).trigger('reset'); 
+        } else {
+            alert('Please fill in all fields correctly.');
+        }
+    });
+});
 

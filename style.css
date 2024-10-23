@@ -381,27 +381,20 @@ textarea {
     margin: 5px 0;
 }
 
-.social-media a {
-    display: inline-block;
-    margin: 0 10px;
-    text-decoration: none;
+.social-media {
+    margin-top: 20px;
 }
 
-.social-media img {
-    width: 30px;
-    height: 30px;
+.social-icon {
+    color: #8B4513; 
+    font-size: 24px;
+    margin-right: 15px;
 }
 
+.social-icon:hover {
+    color: #6F4C3E;
+}
 
-footer {
-    background-color: 	#E7D3B0;
-    padding: 2rem;
-    margin-top: 2rem;
-}
-footer h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
 .btn-primary {
     background-color: #B38B6D; 
     color: white;
@@ -416,3 +409,6 @@ footer h2 {
     background-color: #C3A995; 
     color: white;
 }
+.bg-brown {
+    background-color: #8e6e39; 
+  }
